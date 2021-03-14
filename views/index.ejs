@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="icon"   href="../img/favicon.png" type="image/png" />
+    <link  rel="icon"   href="../static/img/favicon.png" type="image/png" />
     <title>QR Meli Warehouse</title>
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/estilo.css">
@@ -13,10 +13,10 @@
 
 
      <div class="d-flex justify-content-center">
-     <div id="imagen" class="card border-dark mb-3" style="width: 40rem;">
+     <div id="imagen" class="card text-white bg-secondary mb-3" style="width: 40rem;">
         <img class="card-img-top" src="<%= qr.img %>" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title text-center"><%= qr.text %></h5>
+          <h1 class="card-title text-center"><%= qr.text %></h1>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ app.use("/static", express.static(__dirname + '/static'));
 
 // Server frontpage
 app.get('/', function(req, res) {
-  let textToEncode = 'Hola Mundo';
+  let textToEncode = 'ingrese el QR en el link con "/"';
   generateBase64QR(textToEncode, function(qrGenerated){
     res.render("index", qrGenerated);
   });
